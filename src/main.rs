@@ -9,11 +9,13 @@ use crate::filelabel::makeLabel;
 mod filewindows;
 mod filebutton;
 mod filelayout;
-mod fileentry;
+//mod fileentry;
 mod filecombobox;
 mod filelabel;	
 mod filegrid;
 mod fileinfobar;
+mod filesql;
+
 
 fn main() {
 	
@@ -23,7 +25,7 @@ fn main() {
 app.connect_activate(|app| {
 	 //add  control 
         let window = filewindows::Makewindow::window_config(app);
-        let text = fileentry::makeEntry::enrty_config();
+        //let text = fileentry::makeEntry::enrty_config();
         let button = filebutton::makeButton::button_config();
         let combo = filecombobox::makeComboBox::combo_config();
         let layout = filelayout::makeLayout::layout_config();

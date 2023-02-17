@@ -1,11 +1,17 @@
 [package]
-name = "Viewclienprint"
+name = "Viewprint"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-gtk = "0.16.2"
+gtk = "0.17.0"
+mysql = "23.0.1"
+notify-rust = "4.7.0"
+timer = "0.2.0"
+chrono = "0.4"
+rand = "0.8.5"
+pango = "0.17.0"
 gio = "0.16.7"
-glib ="0.16.7"
+glib = "0.16.7"
