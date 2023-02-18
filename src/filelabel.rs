@@ -1,13 +1,16 @@
 use gtk::prelude::*;
 use gtk::{Label};
+use crate::filesql::mySql;
 
 pub struct makeLabel{
 	
 }
 impl makeLabel{	
-	
+
 	   pub fn label_config()-> Label
 	   { 
+	        mySql::selectsql();
+	        mySql::selectreturn();
             let label = Label::builder()                 
             .can_default(true)
             .can_focus(true)          

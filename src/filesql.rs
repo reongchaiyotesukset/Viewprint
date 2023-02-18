@@ -1,22 +1,23 @@
 use mysql::*;
 use mysql::prelude::*;
 
+#[derive(Debug, PartialEq, Eq)]
 pub struct mySql{
 	
 }
-#[derive(Debug, PartialEq, Eq)]
 
+#[derive(Debug, PartialEq, Eq)]
 struct Example {
     id: i32,
     data: Option<String>,
 }
+
 #[derive(Debug, PartialEq, Eq)]
 struct Checkid {
     id: i32,    
 }
-
 impl mySql{	
-	
+           	
 
 	fn connect_server() -> Result<PooledConn>
 {
@@ -26,7 +27,7 @@ let mut conn = pool.get_conn()?;
 
      Ok(conn)
 }
-	fn selectsql() -> std::result::Result<(), Box<dyn std::error::Error>>
+	pub fn selectsql() -> std::result::Result<(), Box<dyn std::error::Error>>
 	{
 	let conn = Self::connect_server();
 	let stack = conn?.query_map(
@@ -40,6 +41,16 @@ let mut conn = pool.get_conn()?;
 	
 	return Ok(());
 
+
+	}
+	
+	pub fn selectreturn()->i32
+	{
+	let a= 100;
+	let conn = Self::connect_server();
+	
+       
+        a
 
 	}
 }
