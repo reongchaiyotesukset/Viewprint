@@ -29,17 +29,16 @@ app.connect_activate(|app| {
         let button = filebutton::makeButton::button_config();
         let combo = filecombobox::makeComboBox::combo_config();
         let layout = filelayout::makeLayout::layout_config();
-        let label = filelabel::makeLabel::label_config();
+        let label1 = filelabel::makeLabel::label_config_name();
+        let label2 = filelabel::makeLabel::label_config_size();
         let grid = filegrid::makeGrid::grid_config();
         let infobar = fileinfobar::makeInfoBar::infoBar_config();
         
         
      
-	infobar.content_area().add(&label);
+	infobar.content_area().add(&label1);
+	infobar.content_area().add(&label2);
 	infobar.add_button("Close", gtk::ResponseType::Close.into());                    
-	grid.add(&infobar);
-	grid.add(&infobar);
-	grid.add(&infobar);
 	grid.add(&infobar);
 	
 	

@@ -7,31 +7,43 @@ pub struct makeLabel{
 }
 impl makeLabel{	
 
-	   pub fn label_config()-> Label
+	   pub fn label_config_name()-> Label
 	   { 
-	        mySql::selectsql();
-	        mySql::selectreturn();
+	        //mySql::selectsql();
+	        //let getdata = mySql::selectreturn();
+	        
+	        
             let label = Label::builder()                 
             .can_default(true)
             .can_focus(true)          
-            .margin(20)
-            .margin_bottom(20)
-            .margin_top(20)
-            .margin_start(20)
-            .margin_end(20)
             .build();
 
-            label.set_markup("<span font_desc=\"Sans 19\">Hello, world!</span>"); 
+             //let text = &format!("{}{}{}","<span font_desc=\"Sans 19\">",getdata,"</span>");
+             //label.set_markup(text); 
+           
             
 		    label
 		    
 		    
 		}
-		
-		pub fn label_set_markup()
-		{ 
-			let label= Self::label_config();
-			label.set_markup("<span font_desc=\"Sans 19\">Hello, world!</span>"); 
+		pub fn label_config_size()-> Label
+	   { 
+	        //mySql::selectsql();
+	        //let getdata = mySql::select_return_String();
+	        //let getdata = mySql::select_return_Vec();
+	        
+            let label = Label::builder()                 
+            .can_default(true)
+            .can_focus(true)          
+            .build();
+
+             //let text = &format!("{}{}{}","<span font_desc=\"Sans 19\">",getdata,"</span>");
+             //label.set_markup(text); 
+           
+            
+		    label
+		    
+		    
 		}
 		
 }
