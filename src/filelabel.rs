@@ -5,6 +5,7 @@ use crate::filesql::mySql;
 pub struct makeLabel{
 	
 }
+//fetch
 impl makeLabel{	
 
 	   pub fn label_config_name()-> Label
