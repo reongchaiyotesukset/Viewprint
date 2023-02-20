@@ -16,7 +16,6 @@ mod filegrid;
 mod fileinfobar;
 mod filesql;
 
-
 fn main() {
 	
     let app = Application::builder()
@@ -36,14 +35,14 @@ app.connect_activate(|app| {
         
         
      
-	infobar.content_area().add(&label1);
+  	infobar.content_area().add(&label1);
 	infobar.content_area().add(&label2);
-	infobar.add_button("Close", gtk::ResponseType::Close.into());                    
-	grid.add(&infobar);
-	
-	
-	//show window show all 
-	window.add(&grid);
+  	infobar.add_button("Close", gtk::ResponseType::Close.into());
+  	grid.add(&infobar);
+  	
+  	
+  	//show window show all 
+  	window.add(&grid);
     window.show_all();
     });
     app.run();
