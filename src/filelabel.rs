@@ -8,7 +8,7 @@ pub struct makeLabel {
 
 impl makeLabel {	
 
-	   pub fn label_config_name()-> Label
+	 pub fn label_config_1()-> Label
 	   { 
 	        //mySql::selectsql();
 	        //let getdata = mySql::selectreturn();
@@ -16,36 +16,105 @@ impl makeLabel {
 	        
             let label = Label::builder()                 
             .can_default(true)
-            .can_focus(true)          
-            .build();
-
-             //let text = &format!("{}{}{}","<span font_desc=\"Sans 19\">",getdata,"</span>");
-             
-             label.set_markup("<span font_desc=\"Sans 19\">มีงานส่งมาใหม่จ้า</span>"); 
-           
-            
-		    label
-		    
-		    
+            .can_focus(true)  
+             .margin(0) 
+             .margin_top(30) 
+             .margin_start(30)       
+             .margin_end(30)         
+            .build();	
+            label.set_markup("<span font_desc=\"Sans 19\">มีงานใหม่เข้ามา </span>"); 
+      
+		    label        
 		}
-		
-		pub fn label_config_size()-> Label
+	   pub fn label_config_2()-> Label
 	   { 
-	   
-	       // mySql::selectsql();
-	        //let getdata = mySql::select_return_String();
-	      
-	       //println!("{:#?}",getdata);
+	        //mySql::selectsql();
+	        //let getdata = mySql::selectreturn();
+	        
 	        
             let label = Label::builder()                 
             .can_default(true)
-            .can_focus(true)          
+            .can_focus(true) 
+             .margin(0) 
+             .margin_top(30) 
+             .margin_start(240)       
+             .margin_end(30)       
             .build();
-					let getdata = mySql::select_return_Vec();
-					for (id, jobname) in getdata {
-						let text = &format!("{}{:?}{}","<span font_desc=\"Sans// 19\">",jobname,"</span>");
-						label.set_markup(text);
-					}
-	    label
+            label.set_markup("<span font_desc=\"Sans 30\">0</span>");			
+            
+		    label        
 		}
+	  pub fn label_config_3()-> Label
+	   { 
+	        //mySql::selectsql();
+	        //let getdata = mySql::selectreturn();
+	        
+	        
+            let label = Label::builder()                 
+            .can_default(true)
+            .can_focus(true) 
+             .margin(0) 
+             .margin_top(30) 
+             .margin_start(300)       
+             .margin_end(30)       
+            .build();
+            label.set_markup("<span font_desc=\"Sans 19\">งาน</span>");			
+            
+		    label        
+		}
+	   pub fn label_config_4()-> Label
+	   { 
+	        //mySql::selectsql();
+	        //let getdata = mySql::selectreturn();
+	        
+	        
+            let label = Label::builder()                 
+            .can_default(true)
+            .can_focus(true) 
+             .margin(0) 
+             .margin_top(30) 
+             .margin_start(450)       
+             .margin_end(30)       
+            .build();
+             label.set_markup("<span font_desc=\"Sans 19\">รับงาน:</span>");				
+            
+		    label        
+		}
+	 pub fn label_config_5()-> Label
+	   { 
+	        //mySql::selectsql();
+	        //let getdata = mySql::selectreturn();
+	        
+	        
+            let label = Label::builder()                 
+            .can_default(true)
+            .can_focus(true) 
+             .margin(0) 
+             .margin_top(30) 
+             .margin_start(600)       
+             .margin_end(30)       
+            .build();
+            label.set_markup("<span font_desc=\"Sans 30\">0</span>");			
+            
+		    label        
+		}
+		pub fn label_config_6()-> Label
+	   { 
+	        //mySql::selectsql();
+	        //let getdata = mySql::selectreturn();
+	        
+	        
+            let label = Label::builder()                 
+            .can_default(true)
+            .can_focus(true) 
+             .margin(0) 
+             .margin_top(30) 
+             .margin_start(650)       
+             .margin_end(30)       
+            .build();
+            label.set_markup("<span font_desc=\"Sans 19\">งาน</span>");			
+            
+		    label        
+		}
+		
 }
