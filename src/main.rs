@@ -50,8 +50,8 @@ fixedmain.add(&label4);
 fixedmain.add(&label5);
 fixedmain.add(&label6);
 
-stack.add_titled(&button, "page1", "งานที่เข้ามาใหม่วันนี้");
-stack.add_titled(&infobarDetial, "page2", "งานที่รับไปแล้ววันนี้");
+stack.add_titled(&button, "page1", "มีงานเข้ามาใหม่");
+stack.add_titled(&infobarDetial, "page2", "รับงานไปแล้ว");
 stackswitcher1.set_stack(Some(&stack));
 
 gridmain.attach(&fixedmain, 0, 0 , 1, 1);

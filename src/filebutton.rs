@@ -4,6 +4,7 @@ use gtk::{Button};
 pub struct makeButton{
 	
 }
+//6788
 impl makeButton{	
 	
 	   pub fn button_config()-> Button{ 
